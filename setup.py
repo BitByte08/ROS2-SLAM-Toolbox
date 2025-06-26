@@ -21,7 +21,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'static_odom_tf_node = encoder_broadcaster.static_odom_tf_node:main'
+            'static_odom_tf_node = encoder_broadcaster.static_odom_tf_node:main',
+            'encoder_reader_node = encoder_broadcaster.encoder_reader_node:main',
+            'encoder_odom_node = encoder_broadcaster.encoder_odom_node:main'
         ],
     },
 )
